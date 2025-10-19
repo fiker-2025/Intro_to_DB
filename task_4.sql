@@ -1,5 +1,5 @@
 -- task_4.sql
--- Show full description of the books table
+-- Show full description of the Books table
 
 SELECT 
     COLUMN_NAME AS 'Column',
@@ -10,4 +10,4 @@ SELECT
     EXTRA AS 'Extra'
 FROM INFORMATION_SCHEMA.COLUMNS
 WHERE TABLE_SCHEMA = 'alx_book_store'
-  AND TABLE_NAME = 'books';
+  AND TABLE_NAME = 'Books';
