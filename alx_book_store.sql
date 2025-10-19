@@ -22,7 +22,8 @@ CREATE TABLE Books (
 CREATE TABLE Customers (
     customer_id INT PRIMARY KEY AUTO_INCREMENT,
     customer_name VARCHAR(215) NOT NULL,
-    email VARCHAR(215)
+    email VARCHAR(215),
+    address TEXT
 );
 
 -- Create Orders table
@@ -54,12 +55,12 @@ VALUES
 ('MY LIFE MY STORY', 2, 22, '2000-01-02'),
 ('THE JOURNEY', 3, 23, '2010-05-06');
 
--- Insert sample customers
-INSERT INTO Customers (customer_name, email)
+-- Insert sample customers with address
+INSERT INTO Customers (customer_name, email, address)
 VALUES
-('HELINA TESFAYE', 'hlinatesfaye@gmail.com'),
-('SAMUEL BEKELE', 'samiiii09@gmail.com'),
-('ABEBA DAWIT', 'abebayedawit00@gmail.com');
+('HELINA TESFAYE', 'hlinatesfaye@gmail.com', 'Addis Ababa'),
+('SAMUEL BEKELE', 'samiiii09@gmail.com', 'Adama'),
+('ABEBA DAWIT', 'abebayedawit00@gmail.com', 'Bahir Dar');
 
 -- Insert sample orders
 INSERT INTO Orders (customer_id, order_date)
