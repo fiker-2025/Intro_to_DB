@@ -1,16 +1,12 @@
--- Create the database if it doesn't exist
-CREATE DATABASE IF NOT EXISTS alx_book_store;
-USE alx_book_store;
-
 -- Create Authors table
 CREATE TABLE Authors (
-    author_id INT PRIMARY KEY AUTO_INCREMENT,
+    author_id INT PRIMARY KEY 
     author_name VARCHAR(215) NOT NULL
 );
 
 -- Create Books table
 CREATE TABLE Books (
-    book_id INT PRIMARY KEY AUTO_INCREMENT,
+    book_id INT PRIMARY KEY
     title VARCHAR(130) NOT NULL,
     author_id INT,
     price DOUBLE,

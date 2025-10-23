@@ -1,5 +1,5 @@
 -- task_5.sql
--- Insert a single row into the customer table
+-- Insert a single row into the Customers table
 
-INSERT INTO customer (customer_id, customer_name, email, address)
+INSERT INTO CUSTOMERS (customer_id, customer_name, email, address)
 VALUES (1, 'Cole Baidoo', 'cbaidoo@sandtech.com', '123 Happiness Ave.');
